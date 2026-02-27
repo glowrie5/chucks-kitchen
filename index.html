@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuks Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-white py-3">
+    <div class="container">
+        <div class="mx-auto brand-name">Chuks Kitchen</div>
+            <a href="login.html" class="text-orange">Sign In</a>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6 p-0">
+                <img src="images/sign up food.png" class="hero-img" alt="Nigerian Food">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+<div class="col-lg-6 d-flex flex-column justify-content-center hero-content">
+                    <div class="content-wrapper">
+                    <h1 class="fw-bold mb-4">
+                        Your Authentic Taste of Nigeria
+                    </h1>
+
+                    <p class="text-muted mb-4">
+                        Experience homemade flavors delivered fresh to your desk or home.
+                        We bring the rich culinary heritage of Nigeria right to your doorstep.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                🍽️ Freshly Prepared
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                🧡 Support Local Business
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                🚚 Fast & Reliable Delivery
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                     <a href="signup.html">
+                    <button class="btn btn-warning w-100 mb-3 hero-btn">Start Your Order</button>
+                    <button class="btn btn-outline-primary w-100">Learn More About Us</button>
+                </div>
+
+                <!-- Small Footer -->
+                <div class="text-center py-4 small-footer">
+                    © 2024 Chuks Kitchen.
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- MAIN FOOTER -->
+<footer class="main-footer">
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h4 class="brand-name mb-3">Chuks Kitchen</h4>
+                  <p> Bringing the authentic <br>
+                     flavors of Nigerian <br>
+                     home cooking to your <br>
+                    table, with passion <br>
+                     and care.
+                   </p>
+                <small>© 2020 Lift Media. All rights reserved.</small>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>My Order</li>
+                    <li>Account</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>+234 801 234 5678</p>
+                <p>hello@chukskitchen.com</p>
+                <p>123 Taste Blvd, Lagos, Nigeria</p>
+            </div>
+
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Back To Top -->
+    <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+</footer>
+
+
+<script>
+    const backToTop = document.getElementById("backToTop");
+
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.custom-wrapper {
+  max-width: 2000px;
+  margin: auto;
+}
+/* LEFT SECTION */
+.left-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* IMAGE */
+.hero-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;     
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ORANGE OVERLAY */
+.overlay {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 120, 0, 0.85);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* TEXT */
+.overlay-text {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+/* FORM */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.btn-orange {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e56c00;
+}
+
+.text-orange {
+  color: #ff7a00;
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: #6b4226;
+}

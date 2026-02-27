@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Details - Chuks Kitchen</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/fooddetails.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#">Chuks Kitchen</a>
+
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav gap-5">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">My Orders</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+      </ul>
+    </div>
+
+    <button class="btn login-btn">Login</button>
+  </div>
+</nav>
+
+
+<!-- FOOD DETAILS SECTION -->
+<section class="food-details">
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6 p-0">
+          <img src="images/fooddetails.png"  class="img-fluid hero-img" alt="Nigerian Food">
+      </div>
+
+      <!-- RIGHT DETAILS -->
+      <div class="col-lg-6 bg-light p-5">
+
+        <div class="details-card position-relative">
+          <button class="close-btn">×</button>
+
+          <h2 class="fw-bold">Jollof Rice with Fried Chicken</h2>
+          <h4 class="price">₦2,800</h4>
+
+          <p class="text-muted mt-3">
+            Our signature Jollof rice, cooked to perfection with aromatic spices,
+            served with juicy, golden-fried chicken. A classic Nigerian comfort
+            food, rich in flavor and satisfying. Perfect for a quick lunch or a
+            hearty dinner.
+          </p>
+
+          <div class="d-flex gap-4 small text-muted mt-3">
+            <span>○ Mildly spicy</span>
+            <span>○ Vegetarian option available</span>
+            <span class="text-primary">View Allergies</span>
+          </div>
+
+          <!-- PROTEIN -->
+          <h5 class="mt-4 fw-semibold">Choose Your Protein</h5>
+
+          <div class="option active-option">
+            <input type="radio" checked>
+            <span>Fried Chicken</span>
+            <small>(Default)</small>
+          </div>
+
+          <div class="option">
+            <input type="radio">
+            <span>Grilled Fish</span>
+            <small>+₦500</small>
+          </div>
+
+          <div class="option">
+            <input type="radio">
+            <span>Beef</span>
+            <small>+₦700</small>
+          </div>
+
+          <!-- EXTRAS -->
+          <h5 class="mt-4 fw-semibold">Extra Sides (Optional)</h5>
+
+          <div class="option">
+            <input type="checkbox">
+            <span>Fried Plantain</span>
+            <small>+₦700</small>
+          </div>
+
+          <div class="option">
+            <input type="checkbox">
+            <span>Coleslaw</span>
+            <small>+₦500</small>
+          </div>
+
+          <div class="option">
+            <input type="checkbox">
+            <span>Extra Pepper Sauce</span>
+            <small>+₦300</small>
+          </div>
+
+          <!-- SPECIAL INSTRUCTIONS -->
+          <h5 class="mt-4 fw-semibold">Special Instructions</h5>
+          <textarea class="form-control" rows="4"
+            placeholder="E.g no onion, food is too spicy..."></textarea>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container py-5">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h4 class="brand-logo">Chuks Kitchen</h4>
+        <p>
+          Bringing the authentic flavors of Nigerian home cooking to your table,
+          with passion and care.
+        </p>
+        <small>© 2020 Lift Media. All rights reserved.</small>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li>Home</li>
+          <li>Explore</li>
+          <li>My Order</li>
+          <li>Account</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h5>Contact Us</h5>
+        <p>+234 801 234 5678</p>
+        <p>hello@chukskitchen.com</p>
+        <p>123 Taste Blvd, Lagos, Nigeria</p>
+      </div>
+
+      <div class="col-md-2">
+        <ul class="footer-links">
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Linkedin</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<button id="scrollTop">↑</button>
+
+<script src="js/fooddetails.js"></script>
+</body>
+</html>

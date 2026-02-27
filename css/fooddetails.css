@@ -1,0 +1,114 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Brand */
+.brand-logo {
+  font-family: 'Pacifico', cursive;
+  color: #ff7a00;
+}
+
+/* Navbar */
+.nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: #ff7a00;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Food Image */
+.food-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Details Card */
+.details-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.price {
+  color: #ff7a00;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: black;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* Options */
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.option span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.option small {
+  color: #777;
+}
+
+.active-option {
+  border: 2px solid #ff7a00;
+}
+
+/* Footer */
+.footer-section {
+  background: #6b4423;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Scroll Button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1e90ff;
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: none;
+}

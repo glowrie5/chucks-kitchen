@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-wrapper {
+  max-width: 2000px;
+  margin: auto;
+}
+
+
+/* LEFT SECTION */
+.left-section {
+  background: url('../images/sign\ up\ food.png') center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 123, 0, 0.85);
+}
+
+.left-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  padding: 60px;
+}
+
+/* TEXT */
+.overlay-text {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 40px;
+    max-width: 450px;
+    margin: auto;
+}
+
+
+/* FORM SECTION */
+.form-section {
+  background: #f4f4f4;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.brand-text {
+  color: #ff7b00;
+  font-family: cursive;
+}
+
+/* SOCIAL BUTTONS */
+.social-button {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-button:hover {
+  background: #f8f8f8;
+  border-color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* BUTTON */
+.btn-orange {
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e96d00;
+}
+
+/* FOOTER */
+.footer-section {
+  background: #6b4226;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+#backToTop {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background: #0d6efd;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+}

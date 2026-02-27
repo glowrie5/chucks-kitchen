@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - Chuks Kitchen</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f5f6f8;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar{
+    background:#ffffff;
+}
+
+.brand{
+    font-family:cursive;
+    color:#ff7a00;
+    font-size:22px;
+}
+/* Colors */
+.text-orange {
+    color: #f97316;
+}
+
+.btn-orange {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #ea580c;
+    color: #fff;
+}
+.login-btn{
+    background:#ff7a00;
+    color:white;
+    border:none;
+    padding:8px 20px;
+    border-radius:8px;
+}
+
+.cart-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.cart-item{
+    background:#f8f9fa;
+    border:1px solid #e5e5e5;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.cart-img{
+    width:110px;
+    height:100px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.qty-btn{
+    width:30px;
+    height:30px;
+    border-radius:6px;
+    border:none;
+    background:#e0e0e0;
+}
+
+.price{
+    color:#ff7a00;
+    font-weight:600;
+    font-size:18px;
+}
+
+.remove-btn{
+    background:#ff7a00;
+    color:white;
+    border:none;
+    border-radius:5px;
+    width:25px;
+    height:25px;
+}
+
+.checkout-btn{
+    background:#ff7a00;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+footer{
+    background:#6b4226;
+    color:white;
+    padding:50px 0;
+    margin-top:80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand brand-logo" href="#">Chuks Kitchen</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-lg-5 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" a href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-orange" href="explore.html">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">My Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Account</a>
+                </li>
+            </ul>
+        </div>
+
+ <div class="d-flex align-items-center gap-3">
+
+    <!-- Cart Button -->
+    <button class="btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+        <i class="bi bi-bag fs-4"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+    </button>
+
+    <a href="#" class="btn btn-orange px-4">Login</a>
+  </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+<div class="row">
+
+<div class="col-lg-8">
+<div class="cart-card">
+
+<h3 class="fw-bold mb-4">Your Cart</h3>
+
+<div id="cartItems"></div>
+
+<a href="order-summary.html">
+<button class="checkout-btn">Proceed to Checkout</button>
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer pt-5 pb-3">
+    <div class="container">
+       <div class="row">
+
+    <!-- Brand -->
+    <div class="col-md-4">
+        <h5 class="text-orange">Chuks Kitchen</h5>
+        <p>
+     Bringing the authentic <br>
+     flavors of Nigerian <br>
+    home cooking to your <br>
+     table, with passion <br>
+     and care.
+  </p>
+        <small>© 2020 Lift Media. All rights reserved.</small>
+      </div>
+
+
+    <!-- Quick Links -->
+    <div class="col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="col-md-3">
+        <h6>Contact Us</h6>
+        <p>+234 801 234 5678</p>
+        <p>hello@chukskitchen.com</p>
+        <p>123 Tetteh Blvd, Lagos</p>
+    </div>
+
+    <!-- Socials -->
+    <div class="col-md-2">
+        <h6>Follow Us</h6>
+        <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+   </div>
+
+     <button id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+     </button>
+    </div>
+  </div>
+</footer>
+
+<script>
+let cart = [
+    {name:"Jollof Rice & Fried Chicken", desc:"With plantain, extra pepper sauce", price:3200, qty:1, img:"images/jellof andchicken.png"},
+    {name:"Jollof Rice & Turkey", desc:"With plantain, extra pepper sauce", price:3200, qty:1, img:"images/egusi.png"},
+    {name:"Jollof Rice & Beef", desc:"With plantain, extra pepper sauce", price:3200, qty:1, img:"images/snails.png"},
+    {name:"Jollof Rice Special", desc:"With plantain, extra pepper sauce", price:3200, qty:1, img:"images/jellof andchicken.png"},
+];
+
+function renderCart(){
+    let container = document.getElementById("cartItems");
+    container.innerHTML = "";
+
+    cart.forEach((item,index)=>{
+        container.innerHTML += `
+        <div class="cart-item d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <img src="${item.img}" class="cart-img">
+                <div>
+                    <h5 class="mb-1 fw-bold">${item.name}</h5>
+                    <small>${item.desc}</small>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <button class="qty-btn" onclick="increaseQty(${index})">+</button>
+                <span>${item.qty}</span>
+                <button class="qty-btn" onclick="decreaseQty(${index})">-</button>
+            </div>
+
+            <div class="price">
+                ₦${item.price * item.qty}
+            </div>
+
+            <button class="remove-btn" onclick="removeItem(${index})">x</button>
+        </div>
+        `;
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function increaseQty(i){
+    cart[i].qty++;
+    renderCart();
+}
+
+function decreaseQty(i){
+    if(cart[i].qty > 1){
+        cart[i].qty--;
+        renderCart();
+    }
+}
+
+function removeItem(i){
+    cart.splice(i,1);
+    renderCart();
+}
+
+renderCart();
+</script>
+
+
+
+</body>
+</html>

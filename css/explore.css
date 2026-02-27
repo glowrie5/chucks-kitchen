@@ -1,0 +1,169 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.brand-logo {
+    font-family: 'Pacifico', cursive;
+    color: #ff7a00;
+}
+
+.text-orange {
+    color: #ff7a00 !important;
+}
+
+.btn-orange {
+    background: #ff7a00;
+    color: white;
+    border-radius: 6px;
+}
+
+.btn-orange:hover {
+    background: #e56d00;
+}
+
+/* HERO */
+.hero {
+    background: url('/images/explore\ header.PNG') center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* SIDEBAR */
+.category-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.category-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.category-list li.active {
+    background: #f8e2cc;
+    border-left: 3px solid #ff7a00;
+}
+
+
+/* Cart Badge */
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff7a00;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .food-card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .food-card img {
+        height: 140px;
+    }
+}
+
+
+/* CARDS */
+.food-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-categories {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+.menu-categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .menu-categories ul {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .menu-categories li {
+        flex: 0 0 auto;
+    }
+}
+
+.menu-categories ul li {
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+.menu-categories ul li.active {
+    background: #f4d9bf;
+    border-left: 4px solid #ff7a00;
+}
+
+
+.price {
+    color: #ff7a00;
+    font-weight: 600;
+}
+
+.add-btn {
+    background: #ff7a00;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background: #6b4226;
+    color: white;
+}
+
+
+.footer-section a:hover {
+    color: #f97316;
+}
+
+#backToTop {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background: #0d6efd;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+}

@@ -8,3 +8,11 @@ if (togglePassword) {
     password.setAttribute("type", type);
   });
 }
+
+
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent page reload
+
+    // Redirect to home page
+    window.location.href = "home.html";
+});

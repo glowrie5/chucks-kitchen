@@ -36,9 +36,19 @@
     </li>
 </ul>
 
-            <a href="#" class="btn btn-orange px-4">Login</a>
-    </div>
+ <a href="order-summary.html" class="position-relative">
+  🛒
+  <button class="btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+        <i class="bi bi-bag fs-4"></i>
+        <span id="cart-count" class="cart-badge"></span>
+    </button>
+</a>
+                <a href="login.html" class="btn btn-orange mt-3">Login</a>
+            </div>   
+         </div>
 </nav>
+
+
 
 
 <!-- ================= HERO SECTION ================= -->
@@ -131,8 +141,9 @@
                        </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -148,8 +159,9 @@
                              </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -164,8 +176,9 @@
                              </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -181,8 +194,9 @@
                           </p>
                           <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -198,8 +212,9 @@
                              </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -214,8 +229,9 @@
                             </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="price">₦3,500</span>
-                            <button class="btn btn-orange btn-sm">Add to cart</button>
-                        </div>
+<button class="btn btn-orange btn-sm add-to-cart">
+  Add to cart
+</button>                        </div>
                     </div>
                 </div>
             </div>
@@ -294,6 +310,25 @@
 </div>
 </footer>
 
+<script>
+  const cartButtons = document.querySelectorAll(".add-to-cart");
+
+  cartButtons.forEach(button => {
+    button.addEventListener("click", function () {
+
+      // Change text
+      this.innerText = "Added ✓";
+
+      // Change color
+      this.classList.remove("btn-orange");
+      this.classList.add("btn-success");
+
+      // Optional: disable after adding
+      this.disabled = true;
+
+    });
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
